@@ -20,6 +20,5 @@ public interface ShapeCalculatorWebService {
     @WebMethod
     @Oneway
     @Generated(value = "org.apache.cxf.tools.wsdlto.WSDLToJava", date = "2016-09-21T12:04:15.336-04:00")
-    //public int runAllPendingRequestsNoStopOnError();
-    public void runAllPendingRequestsNoStopOnError();
+    public int runAllPendingRequestsNoStopOnError();
 }

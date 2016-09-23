@@ -46,15 +46,14 @@ public class ShapeCalculatorWebServiceImpl implements ShapeCalculatorWebService 
      * @see com.eli.calc.shape.service.ws.ShapeCalculatorWebService#runAllPendingRequestsNoStopOnError()*
      */
     @Generated(value = "org.apache.cxf.tools.wsdlto.WSDLToJava", date = "2016-09-21T13:21:57.958-04:00")
-    //public int runAllPendingRequestsNoStopOnError() { 
-    public void runAllPendingRequestsNoStopOnError() { 
+    public int runAllPendingRequestsNoStopOnError() { 
         LOG.debug("\n\n\nExecuting operation runAllPendingRequestsNoStopOnError\n\n\n");
         try {
 
 			int numRun = calculator.runAllPendingRequestsNoStopOnError();
 
 			LOG.debug("\n\n\noperation runAllPendingRequestsNoStopOnError returning "+numRun+"\n\n\n");
-			//return numRun;
+			return numRun;
 			
         } catch (java.lang.Exception ex) {
 			LOG.debug("\n\n\noperation runAllPendingRequestsNoStopOnError threw an exception..\n\n\n");
